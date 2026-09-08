@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#183f25" />
+  <title>mitoso brownie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="mitoso brownie, inicio">
+      <span>mitoso brownie</span>
+      <span class="heart" aria-hidden="true">♡</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="nav-link active" href="#inicio">Inicio</a>
+      <a class="nav-link" href="#productos">Productos</a>
+      <button class="nav-cart" id="cartToggle" type="button" aria-expanded="true" aria-controls="cartPanel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"/><circle cx="10" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg>
+        <span>Carrito (<span id="cartCount">2</span>)</span>
+      </button>
+    </nav>
+
+    <a class="whatsapp-pill" href="#contacto" aria-label="escríbenos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.3 8.3 0 0 1-12.3 7.3L4 20.2l1.1-4A8.3 8.3 0 1 1 20.5 11.8Z"/><path d="M9.2 8.2c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.7c-.2.2-.1.4 0 .6.5.8 1.2 1.5 2.1 2 .2.1.4.1.6-.1l.8-1c.2-.2.4-.3.7-.1l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.4-1 2-.6.6-1.5.8-2.5.5-1.1-.3-3.5-1.1-5.8-3.5-1.8-1.9-2.3-3.6-2.4-4.3-.1-.7.2-1.6.6-2.1.4-.4.8-.6 1-.6Z"/></svg>
+      <span>escríbenos</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-decor deco-a" aria-hidden="true"></div>
+      <div class="hero-decor deco-b" aria-hidden="true"></div>
+      <div class="hero-decor deco-c" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <div class="spark spark-left" aria-hidden="true"><i></i><i></i><i></i></div>
+        <h1>compra<br />la magia</h1>
+        <span class="scribble-heart" aria-hidden="true">♡</span>
+        <div class="price-badge">15 soles por porción</div>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary add-product" type="button" data-product="brownies">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"/><circle cx="10" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg>
+            <span>¡Compra ya!</span>
+          </button>
+          <a class="btn btn-secondary" href="#contacto">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.3 8.3 0 0 1-12.3 7.3L4 20.2l1.1-4A8.3 8.3 0 1 1 20.5 11.8Z"/><path d="M9.2 8.2c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.7c-.2.2-.1.4 0 .6.5.8 1.2 1.5 2.1 2 .2.1.4.1.6-.1l.8-1c.2-.2.4-.3.7-.1l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.4-1 2-.6.6-1.5.8-2.5.5-1.1-.3-3.5-1.1-5.8-3.5-1.8-1.9-2.3-3.6-2.4-4.3-.1-.7.2-1.6.6-2.1.4-.4.8-.6 1-.6Z"/></svg>
+            <span>escríbenos</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap">
+        <img src="assets/hero-desserts.jpg" alt="Blondies y brownies con chocolate" class="hero-photo" />
+        <div class="hero-photo-fade" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="products-section" id="productos">
+      <div class="products-heading-wrap">
+        <h2>Nuestros productos</h2>
+        <div class="heading-spark" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="assets/blondies.jpg" alt="blondies" /></div>
+          <div class="product-card-body">
+            <h3>blondies</h3>
+            <p>15 soles por porción</p>
+            <button class="btn product-btn add-product" type="button" data-product="blondies">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"/><circle cx="10" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg>
+              <span>¡Compra ya!</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="assets/brownies.jpg" alt="brownies" /></div>
+          <div class="product-card-body">
+            <h3>brownies</h3>
+            <p>15 soles por porción</p>
+            <button class="btn product-btn add-product" type="button" data-product="brownies">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"/><circle cx="10" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg>
+              <span>¡Compra ya!</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image-wrap"><img src="assets/galletas.jpg" alt="galletas" /></div>
+          <div class="product-card-body">
+            <h3>galletas</h3>
+            <p>15 soles por porción</p>
+            <button class="btn product-btn add-product" type="button" data-product="galletas">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20 8H7"/><circle cx="10" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg>
+              <span>¡Compra ya!</span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <aside class="cart-panel" id="cartPanel" aria-label="Tu carrito">
+        <div class="cart-head">
+          <h2>Tu carrito</h2>
+          <button id="cartClose" class="cart-close" type="button" aria-label="Cerrar carrito">×</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-total"><span>Total</span><strong id="cartTotal">30 soles</strong></div>
+        <button class="btn cart-cta" type="button">Ir al carrito</button>
+      </aside>
+    </section>
+
+    <section class="promo-band" aria-label="mitoso brownie">
+      <div class="promo-wordmark">mitoso<br />brownie <span>♡</span></div>
+      <div class="promo-image-shell"><img src="assets/banner-brownie.jpg" alt="brownie con chocolate" /></div>
+      <div class="promo-headline">compra<br />la magia <span>♡</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main">
+      <a class="brand footer-brand" href="#inicio">mitoso brownie <span class="heart">♡</span></a>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <button type="button" id="footerCart">Carrito</button>
+      </nav>
+      <a class="footer-whatsapp" href="#contacto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.3 8.3 0 0 1-12.3 7.3L4 20.2l1.1-4A8.3 8.3 0 1 1 20.5 11.8Z"/><path d="M9.2 8.2c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.7c-.2.2-.1.4 0 .6.5.8 1.2 1.5 2.1 2 .2.1.4.1.6-.1l.8-1c.2-.2.4-.3.7-.1l1.7.8c.3.1.4.3.4.5 0 .3-.2 1.4-1 2-.6.6-1.5.8-2.5.5-1.1-.3-3.5-1.1-5.8-3.5-1.8-1.9-2.3-3.6-2.4-4.3-.1-.7.2-1.6.6-2.1.4-.4.8-.6 1-.6Z"/></svg>
+        <span>escríbenos</span>
+      </a>
+    </div>
+    <div class="footer-rule"><span>♥</span></div>
+    <div class="footer-bottom">mitoso brownie</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
